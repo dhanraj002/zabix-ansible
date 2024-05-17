@@ -26,4 +26,4 @@ fi
 export PATH=$PATH:/usr/local/bin
 
 # Run the Ansible playbook
-ansible-playbook -i hosts.ini setup_zabbix.yml --extra-vars "zabbix_db_user=${ZABBIX_DB_USER} zabbix_db_password=${ZABBIX_DB_PASSWORD}"
+ansible-playbook -i hosts.ini zabbix-setup.yml --extra-vars "zabbix_db_user=${ZABBIX_DB_USER} zabbix_db_password=${ZABBIX_DB_PASSWORD}"
